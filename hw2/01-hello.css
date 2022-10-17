@@ -3,4 +3,16 @@ If you would prefer, you can delete them and use your own classes and style defi
 
 .container {
   width: 50vw;
+  margin: auto;
+}
+.img {
+  border-radius: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.para::first-line {
+  font-size: 1.2rem;
+  font-weight: bold;
 }

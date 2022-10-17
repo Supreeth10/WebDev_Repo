@@ -1,17 +1,62 @@
-/* The class names and style declarations below were added to help you get started.
-If you would prefer, you can delete them and use your own classes and style declarations. */
-
+.h1 {
+  text-align: center;
+  margin-left: 10%;
+  width: 80%;
+}
 .form {
+  margin: auto;
+  border-style: solid;
+  border-color: grey;
+  padding-top: 5%;
+  padding-bottom: 10%;
+  padding-left: 2%;
+  padding-right: 2%;
 }
 
-.form-element {
+fieldset {
+  border: 0;
+  padding-left: 0%;
 }
 
-.btn {
+fieldset legend {
+  font-weight: bold;
+  float: left;
 }
 
-.btn-primary {
+.input {
+  font-weight: bold;
 }
 
-.btn-secondary {
+.input + input {
+  float: right;
+  width: 70%;
+}
+
+input[type="submit"] {
+  background-color: green;
+  color: white;
+  width: 49%;
+  height: 30px;
+  float: left;
+  border: 2px solid green;
+}
+input[type="reset"] {
+  float: right;
+  background-color: white;
+  color: green;
+  width: 49%;
+  height: 30px;
+  border: 2px solid green;
+  margin-left: 0.5%;
+}
+
+input[type="submit"]:hover {
+  background-color: orange;
+  color: black;
+  border: 2px solid black;
+}
+
+input[type="reset"]:hover {
+  background-color: lightpink;
+  color: black;
 }
