@@ -1,5 +1,134 @@
 /* Code for exercise 01-flex */
+* {
+  margin: 0;
+  padding: 0;
+}
+.flexBody {
+  background-image: linear-gradient(
+    to right,
+    rgb(106, 147, 179),
+    rgb(228, 167, 187),
+    rgb(106, 147, 179)
+  );
+}
+.list-item {
+  list-style: none;
+}
+.Ex {
+  display: block;
+  text-decoration: none;
+  color: white;
+  padding: 30px;
+}
+.nav-list {
+  display: flex;
+  justify-content: flex-end;
+  background-color: purple;
+}
 
+.Ex:hover {
+  background-color: green;
+}
+.Ex:focus {
+  border-style: solid;
+  border-color: orange;
+}
+.Ex:active {
+  background-color: orange;
+}
+/*  */
 /* Code for exercise 02-grid */
+.item1 {
+  grid-area: header;
+}
+
+.item2 {
+  grid-area: Jumbotron;
+}
+
+.item3 {
+  grid-area: card1;
+}
+
+.item4 {
+  grid-area: card2;
+}
+
+.item5 {
+  grid-area: card3;
+}
+
+.item6 {
+  grid-area: section;
+}
+.item7 {
+  grid-area: footer;
+}
+h1 {
+  background-color: lavender;
+}
+
+.grid-container {
+  display: grid;
+  background-color: lavender;
+  height: 97vh;
+  padding-top: 30px;
+  padding-bottom: 100px;
+  padding-right: 5px;
+  padding-left: 5px;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 2fr 2fr 1fr 1fr 1fr;
+  gap: 5px;
+  grid-template-areas:
+    "header"
+    "Jumbotron"
+    "section"
+    "card1"
+    "card2"
+    "footer";
+}
+@media (max-width: 768px) {
+  .item5 {
+    display: none;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .grid-container {
+    display: grid;
+    background-color: lavender;
+    padding-top: 30px;
+    padding-bottom: 100px;
+    height: 97vh;
+    grid-template-columns: 2fr 2fr;
+    grid-template-rows: 1fr 2fr 2fr 2fr 1fr;
+    gap: 5px;
+    grid-template-areas:
+      "header   header"
+      "Jumbotron    Jumbotron"
+      "section  section"
+      "card1 card2"
+      "footer   footer";
+  }
+}
+
+@media (min-width: 769px) {
+  .grid-container {
+    display: grid;
+    background-color: lavender;
+    height: 97vh;
+    padding-top: 30px;
+    padding-bottom: 100px;
+    grid-template-columns: 2fr 2fr 2fr;
+    grid-template-rows: 1fr 2fr 2fr 3fr 1fr;
+    gap: 5px;
+    grid-template-areas:
+      "header   header    header"
+      "Jumbotron    Jumbotron Jumbotron"
+      "card1 card2    card3"
+      "section  section   section"
+      "footer   footer    footer";
+  }
+}
 
 /* Code for exercise 03-bootstrap-form */
