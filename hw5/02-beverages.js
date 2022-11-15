@@ -12,11 +12,11 @@ const addBookToDOM = (item) => {
   image.alt = `An Image of ${item.strDrink}`;
   heading.textContent = item.strDrink;
 
-  image.style.height = "250px"; //180px
-  image.style.width = "320px"; //300px
+  image.style.height = "250px";
+  image.style.width = "320px";
   element.style.margin = "5px";
-  element.style.width = "340px"; //340px
-  element.style.height = "350px"; //250px
+  element.style.width = "340px";
+  element.style.height = "350px";
   element.fontWeight = "bold";
   element.append(image);
   element.append(heading);

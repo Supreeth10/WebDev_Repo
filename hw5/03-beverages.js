@@ -16,14 +16,14 @@ $(document).ready(function () {
         .addClass("figure")
         .css({
           margin: "5px",
-          height: "350px", //350px
-          width: "340px", //
+          height: "350px",
+          width: "340px",
         })
         .append(
           $("<img>")
             .attr("src", `${item.strDrinkThumb}`)
-            .attr("height", "250px") //250px
-            .attr("width", "320px") //320px
+            .attr("height", "250px")
+            .attr("width", "320px")
         )
         .append($("<p>").attr("fontWeight", "bold").text(item.strDrink))
     );
