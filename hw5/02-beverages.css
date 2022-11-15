@@ -5,6 +5,8 @@
 
 .figure {
   border: 0.5rem solid var(--white);
+  background-color: lightgrey;
+  font-weight: bold;
 }
 
 .figure:hover {
